@@ -1,0 +1,1 @@
+kubectl run nginx-pod-ori --image=nginx:alpine --dry-run=client -o yaml > pod.yaml

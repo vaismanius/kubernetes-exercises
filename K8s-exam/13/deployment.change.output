@@ -1,0 +1,33 @@
+Name:                   nginx-deploy
+Namespace:              default
+CreationTimestamp:      Wed, 24 May 2023 11:27:54 +0300
+Labels:                 app=nginx-deploy
+Annotations:            deployment.kubernetes.io/revision: 2
+Selector:               app=nginx-deploy
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=nginx-deploy
+  Containers:
+   nginx:
+    Image:        nginx:1.17
+    Port:         <none>
+    Host Port:    <none>
+    Environment:  <none>
+    Mounts:       <none>
+  Volumes:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      True    MinimumReplicasAvailable
+  Progressing    True    NewReplicaSetAvailable
+OldReplicaSets:  nginx-deploy-648567495 (0/0 replicas created)
+NewReplicaSet:   nginx-deploy-6555d89bcd (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  32m   deployment-controller  Scaled up replica set nginx-deploy-648567495 to 1
+  Normal  ScalingReplicaSet  22m   deployment-controller  Scaled up replica set nginx-deploy-6555d89bcd to 1
+  Normal  ScalingReplicaSet  22m   deployment-controller  Scaled down replica set nginx-deploy-648567495 to 0 from 1

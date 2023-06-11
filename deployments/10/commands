@@ -1,0 +1,6 @@
+kubectl set image deployment/webapp nginx=nginx:1.100
+k get pod
+kubectl rollout undo deployment/webapp
+kubectl rollout history deploy webapp --revision=9
+kubectl set image deployment/webapp nginx=nginx:latest
+kubectl rollout history deploy webapp --revision 10

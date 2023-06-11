@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    #run: nginx-resolver
+    resolve: this
+  name: nginx-resolver
+spec:
+  containers:
+  - image: nginx
+    name: nginx-resolver
+    ports:
+    - name: http
+      containerPort: 80
+      protocol: TCP
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

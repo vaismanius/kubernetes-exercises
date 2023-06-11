@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  annotations:
+    deployment.kubernetes.io/desired-replicas: "5"
+    deployment.kubernetes.io/max-replicas: "7"
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2023-06-04T12:18:12Z"
+  generation: 1
+  labels:
+    app: webapp
+    pod-template-hash: 6684ccd7b8
+  name: webapp-6684ccd7b8
+  namespace: default
+  ownerReferences:
+  - apiVersion: apps/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Deployment
+    name: webapp
+    uid: 140f0806-5b05-43e7-9ea9-7977c123bcb4
+  resourceVersion: "28727"
+  uid: 8b34d31a-de47-4763-90da-fbc847c8a968
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: webapp
+      pod-template-hash: 6684ccd7b8
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: webapp
+        pod-template-hash: 6684ccd7b8
+    spec:
+      containers:
+      - image: nginx
+        imagePullPolicy: Always
+        name: nginx
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 5
+  fullyLabeledReplicas: 5
+  observedGeneration: 1
+  readyReplicas: 5
+  replicas: 5

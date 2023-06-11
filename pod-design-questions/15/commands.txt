@@ -1,0 +1,1 @@
+k label node k3d-dev-agent-1 k3d-dev-agent-1=nginxnode

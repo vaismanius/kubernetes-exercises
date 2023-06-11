@@ -1,0 +1,4 @@
+k create deploy prod --image nginx --replicas 2 
+k label pods -l app=prod env=prod
+k create deploy dev --image nginx --replicas 3 
+k label pods -l app=dev env=dev

@@ -1,0 +1,29 @@
+NAME                      READY   STATUS             RESTARTS   AGE
+webapp-788f8c85b6-pwkp7   1/1     Running            0          17m
+webapp-77b685f94f-b2664   0/1     ImagePullBackOff   0          29s
+deployment.apps/webapp with revision #9
+Pod Template:
+  Labels:	app=webapp
+	pod-template-hash=788f8c85b6
+  Containers:
+   nginx:
+    Image:	nginx:1.17.4
+    Port:	80/TCP
+    Host Port:	0/TCP
+    Environment:	<none>
+    Mounts:	<none>
+  Volumes:	<none>
+
+deployment.apps/webapp with revision #10
+Pod Template:
+  Labels:	app=webapp
+	pod-template-hash=84bc478888
+  Containers:
+   nginx:
+    Image:	nginx:latest
+    Port:	80/TCP
+    Host Port:	0/TCP
+    Environment:	<none>
+    Mounts:	<none>
+  Volumes:	<none>
+

@@ -1,0 +1,7 @@
+k label pod dev-84756b7fc4-z6j6z env=uat --overwrite
+NAME                    READY   STATUS    RESTARTS   AGE     LABELS
+prod-6f98b98456-gvhjm   1/1     Running   0          7h4m    app=prod,env=prod,pod-template-hash=6f98b98456
+prod-6f98b98456-54ll8   1/1     Running   0          7h4m    app=prod,env=prod,pod-template-hash=6f98b98456
+dev-84756b7fc4-t2645    1/1     Running   0          6h38m   app=dev,env=dev,pod-template-hash=84756b7fc4
+dev-84756b7fc4-9bm6k    1/1     Running   0          6h38m   app=dev,env=dev,pod-template-hash=84756b7fc4
+dev-84756b7fc4-z6j6z    1/1     Running   0          6h38m   app=dev,env=uat,pod-template-hash=84756b7fc4

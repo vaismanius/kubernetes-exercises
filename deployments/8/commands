@@ -1,0 +1,1 @@
+kubectl rollout history deployment/webapp --revision=5

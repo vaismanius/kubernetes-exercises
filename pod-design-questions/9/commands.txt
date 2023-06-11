@@ -1,0 +1,1 @@
+k get pods  -l ' env in (dev,prod)'

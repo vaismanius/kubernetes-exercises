@@ -1,0 +1,2 @@
+k apply -f node-pod.yaml
+k get pods --output=wide

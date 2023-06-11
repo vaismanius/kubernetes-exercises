@@ -1,0 +1,1 @@
+kubectl autoscale deployment webapp --min=10 --max=20 --cpu-percent=85

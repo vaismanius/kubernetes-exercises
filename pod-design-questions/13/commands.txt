@@ -1,0 +1,6 @@
+kubectl label pod dev-84756b7fc4-z6j6z app=nginx --overwrite
+kubectl label pod dev-84756b7fc4-9bm6k app=nginx --overwrite
+kubectl label pod dev-84756b7fc4-t2645 app=nginx --overwrite
+kubectl label pod prod-6f98b98456-54ll8 app=nginx --overwrite
+kubectl label pod prod-6f98b98456-gvhjm app=nginx --overwrite
+

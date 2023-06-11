@@ -1,0 +1,16 @@
+root@lap3:/home/ori/deployments# k get pods
+NAME                      READY   STATUS    RESTARTS   AGE
+webapp-84bc478888-2sgr5   1/1     Running   0          25m
+root@lap3:/home/ori/deployments# k get pods
+NAME                      READY   STATUS    RESTARTS   AGE
+webapp-84bc478888-2sgr5   1/1     Running   0          25m
+webapp-84bc478888-mjs2t   1/1     Running   0          15s
+webapp-84bc478888-kvk4k   1/1     Running   0          15s
+webapp-84bc478888-mb9bn   1/1     Running   0          15s
+webapp-84bc478888-wl4c8   1/1     Running   0          15s
+webapp-84bc478888-zsnw4   1/1     Running   0          15s
+webapp-84bc478888-47dsn   1/1     Running   0          15s
+webapp-84bc478888-xqcbl   1/1     Running   0          15s
+webapp-84bc478888-cd5md   1/1     Running   0          15s
+webapp-84bc478888-2jjzw   1/1     Running   0          15s
+

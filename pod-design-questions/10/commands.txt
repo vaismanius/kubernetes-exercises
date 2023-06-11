@@ -1,0 +1,1 @@
+k get pods --show-labels  -l ' env in (dev,prod)'

@@ -1,0 +1,2 @@
+k set image deployment/nginx-deploy nginx=nginx:1.17
+kubectl describe deployments

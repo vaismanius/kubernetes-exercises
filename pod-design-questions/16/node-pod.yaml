@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: use-pv
+  name: use-pvspec-ori
+spec:
+  containers:
+  - image: nginx
+    name: use-pv
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+  nodeSelector:
+    k3d-dev-agent-1: nginxnode
+status: {}
